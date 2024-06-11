@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Checkout App</h1>
+    <nav class="navbar">
+        <ul>
+            <li class="my">Einkaufswagen</li>
+            <li class="delete">Stornieren <i class="fa-regular fa-trash-can"></i></li>
+        </ul>
+    </nav>
+<section>
+    <div class="container">
+        <h3>Verkäufer : AysesStore  </h3>
+        <div class="card card-1">
+            <div class="image"><img src="./img/Trockner.jpg" alt=""></div>
+            <div class="info">
+                <h4>BOSCH WQB245B40 Wärmepumpentrockner Serie 8 (9,0 kg, A+++, Weiß)</h4>
+                <p class="price"> 839,99 € <span>1729.-</span></p>
+                <div class="pieces">
+                    <div>
+                        <i class="fa-regular fa-square-minus minus"></i>
+                        <span class="piece">1</span>
+                        <i class="fa-regular fa-square-plus plus"></i>
+                        <i class="fa-regular fa-trash-can trash"></i>
+
+                    </div>
+                    
+                    <div class="sum">0000</div>
+
+                </div>
+
+                <div class="wish-button">
+                    <i class="fa-regular fa-heart"></i>
+
+                </div>
+            </div>
+        </div>
+        <div class="card card-2">
+            <div class="image"><img src="./img/Waschmaschine.jpg" alt=""></div>
+            <div class="info">
+                <h4>BOSCH WGB254030 Waschmaschine (10 kg, 1400 U/Min., A)</h4>
+                <p class="price">829,99 € <span>1389.-</span></p>
+                <div class="pieces">
+                    <div>
+                        <i class="fa-regular fa-square-minus minus"></i>
+                        <span class="piece">1</span>
+                        <i class="fa-regular fa-square-plus plus"></i>
+                        <i class="fa-regular fa-trash-can trash"></i>
+
+                    </div>
+                    
+                    <div class="sum"></div>
+
+                </div>
+
+                <div class="wish-button">
+                    <i class="fa-regular fa-heart"></i>
+
+                </div>
+            </div>
+        </div>
+        <div class="card card-3">
+            <div class="image"><img src="./img/zwischenbaurahmen.jpg" alt=""></div>
+            <div class="info">
+                <h4>XAVAX mit Wäscheständer Zwischenbaurahmen (600 mm)</h4>
+                <p class="price">79,99 €  <span>90.-</span></p>
+                <div class="pieces">
+                    <div>
+                        <i class="fa-regular fa-square-minus minus"></i>
+                        <span class="piece">1</span>
+                        <i class="fa-regular fa-square-plus plus"></i>
+                        <i class="fa-regular fa-trash-can trash"></i>
+
+                    </div>
+                    
+                    <div class="sum"></div>
+
+                </div>
+
+                <div class="wish-button">
+                    <i class="fa-regular fa-heart"></i>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sum-container">
+        <div class="selected">
+            
+            <p>
+                <h4>Ausgewählte Produkte</h4>
+                <p id="total-selected">0</p>
+            </p>
+            <button>Zur Kasse Gehen</button>
+        </div>
+
+        <div class="total-price">
+            <ul>
+                <li>
+                    <p id="shipping">Lieferung</p>
+                    <p id="shipping-price"></p>
+                </li>
+                <li>
+                    <p id="mwst">MwSt. 18%</p>
+                    <p id="mwst-price"></p>
+                </li>
+                <li>
+                    <p id="total">Gesamtsumme</p>
+                    <p id="total-price"></p>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
