@@ -1,3 +1,8 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -15,6 +20,11 @@ h1{
     color: #DF0000;
     font-size: 3rem;
     padding: 1rem;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+
 }
 
 .navbar ul{
@@ -26,6 +36,10 @@ h1{
     font-size: 1.5rem;
     font-weight: 600;
 
+}
+
+.my{
+    color: #DF0000;
 }
 
 .delete{
@@ -73,17 +87,23 @@ h3{
 .card{
     /* border: 2px solid red; */
     display: flex;
+    justify-content: space-around;
 
     align-items: center;
     gap: 2rem;
 }
 
+.info{
+    width: 70%;
+}
 
 .card h4{
+   
     color: #4E5150;
     font-size: 1rem;
     font-weight: 700;
     margin-bottom: 1rem;
+    
 }
 
 .price{
@@ -114,7 +134,7 @@ img{
 }
 
 .pieces{
-    
+    width: 100%;
     display: flex;
     justify-content: space-between;
     color: #DF0000;
@@ -137,9 +157,13 @@ img{
     font-size: 1.5rem;
 }
 
+.sum::after{
+    content: " €";
+}
+
 .sum-container{
     width: 30%;
-    height: 40vh;
+    /* height: 40vh; */
     
     border-radius: 1rem;
     background-color: #FFFFFF;
@@ -192,5 +216,19 @@ img{
     list-style-type: none;
     line-height: 5px;
     padding: 1rem;
+    display: flex;
+    justify-content: space-between;
     
+    
+}
+
+#shipping-price::after, #mwst-price::after, #total-price::after{
+    content: ' €';
+}
+
+.no-product{
+    text-align: center;
+    color: #DF0000;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
