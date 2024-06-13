@@ -22,9 +22,16 @@ h1{
     padding: 1rem;
     font-family: "Exo 2", sans-serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
+    font-weight: 600;
     font-style: normal;
+    width: 80%;
+    margin: auto;
 
+}
+
+.navbar{
+    width: 80%;
+    margin: auto;
 }
 
 .navbar ul{
@@ -63,9 +70,12 @@ h1{
     font-size: 1.5rem;
 }
 
-section{
+.section-container{
+    width: 80%;
+    margin: auto;
     display: flex;
-    justify-content: center;gap: 3rem;
+    justify-content: center;
+    gap: 3rem;
 }
 .container{
     /* border: 2px solid red; */
@@ -78,6 +88,7 @@ section{
     border-radius: 1rem;
     padding: 1rem;
     gap: 2rem;
+    box-shadow: 2px 2px 10px black;
 }
 
 h3{
@@ -168,7 +179,7 @@ img{
     border-radius: 1rem;
     background-color: #FFFFFF;
     font-size: 1.2rem;
-
+    box-shadow: 2px 2px 10px black;
 
 }
 

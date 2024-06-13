@@ -30,6 +30,9 @@ const deleteAllButton = document.querySelector(".delete .fa-trash-can");
 const products = document.querySelector(".container");
 // console.log(products.classList)
 
+const shippingPrice=document.getElementById('shipping-price')
+const mwstPrice=document.getElementById('mwst-price')
+const totalPrice=document.getElementById('total-price')
 //^ Variables
 let total = 0;
 let subtotal = 0;
@@ -41,7 +44,13 @@ deleteAllButton.addEventListener("click", () => {
   products.classList.add("no-product");
   // console.log(products.classList)
   document.querySelector(".delete").remove();
-  calcTotal()
+  shippingPrice.textContent = 0
+  mwstPrice.textContent = 0
+  totalPrice.textContent = 0
+
+  
+  console.log(shippingPrice.textContent)
+  
 });
 
 products.addEventListener("click", (e) => {
@@ -63,6 +72,9 @@ products.addEventListener("click", (e) => {
     // console.log(products.children);
     if (products.children.length == 1) {
       products.textContent = "Einkaufswagen ist leer";
+      shippingPrice.textContent = 0
+      mwstPrice.textContent = 0
+      totalPrice.textContent = 0
       
     }calcTotal()
   }
@@ -94,9 +106,7 @@ const calcTotal = () => {
   console.log(total)
   totalSelected.textContent = total.toFixed(2) +' €'
 
-  const shippingPrice=document.getElementById('shipping-price')
-    const mwstPrice=document.getElementById('mwst-price')
-    const totalPrice=document.getElementById('total-price')
+    
 
   if(total >= FREE_SHIPPING){
 
